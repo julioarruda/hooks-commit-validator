@@ -1,0 +1,9 @@
+#!/bin/bash
+BRANCH=$(git rev-parse --abbrev-ref HEAD)
+REGEX="^(feature|bugfix|release|hotfix)\/[a-z0-9._-]+$"
+
+if ! [[ $BRANCH =~ $REGEX ]]; then
+  echo "Your commit was rejected due to branching name"
+  echo "Please rename your branch with '(dev|release)-YYYY-qX.X.X' syntax"
+  exit 1
+fi
