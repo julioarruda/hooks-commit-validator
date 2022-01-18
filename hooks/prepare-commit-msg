@@ -3,11 +3,10 @@ MESSAGE=$(cat $1)
 COMMITFORMAT="^(feat|fix|docs|style|refactor|test|chore|perf|other)(\((.)\))?: (.)$"
 
 if ! [[ "$MESSAGE" =~ $COMMITFORMAT ]]; then
-  echo "Your commit was rejected due to the commit message. Skipping..." 
+  echo "Seu commit foi rejeitado porque a mensagem está fora do padrão" 
   echo ""
-  echo "Please use the following format:"
-  echo "feat: feature example comment"
-  echo "fix(ui): fix example comment"
+  echo "Por favor, utilize o seguinte formato"
+  echo "feat: comentário de exemplo de uma feature"
   echo ""
   exit 1
 fi
