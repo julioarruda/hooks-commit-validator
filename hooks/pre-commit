@@ -3,7 +3,7 @@ BRANCH=$(git rev-parse --abbrev-ref HEAD)
 REGEX="^(feature|bugfix|release|hotfix)\/[a-z0-9._-]+$"
 
 if ! [[ $BRANCH =~ $REGEX ]]; then
-  echo "Your commit was rejected due to branching name"
-  echo "Please rename your branch with '(feature|bugfix|release|hotfix)/something' syntax"
+  echo "Seu commit foi rejeitado pois não segue aos padrões definidos pelo time"
+  echo "Por favor, altere o nome da sua branch de acordo com o padrão '(feature|bugfix|release|hotfix)/algumacoisa' "
   exit 1
 fi
