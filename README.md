@@ -18,3 +18,33 @@ git config core.hooksPath /workspaces/hooks/hooks
 # Sugestão de Uso
 
 Você poderia criar um repositório centralizado, com todos os Hooks que sejam padrões para a empresa. Novas pessoas colaboradoras, devem baixar esse repositório centralizado, e configurar o diretório de Hooks da máquina para esse repositório central, garantindo que todas as pessoas sigam os mesmos passos.
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+baseado em: [https://dev.to/anibalardid/how-to-check-commit-message-and-branch-name-with-git-hooks-without-any-new-installation-n34](https://dev.to/anibalardid/how-to-check-commit-message-and-branch-name-with-git-hooks-without-any-new-installation-n34)
